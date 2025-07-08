@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Aceites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Aceites</h1>
+        <nav>
+            <a href="#">Prueba Pablo</a>
+            <a href="#productos">Productos</a>
+            <a href="#carrito">Carrito (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>Aceites destacados</h2>
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="Aceite de motor 5W-30">
+                <h3>Aceite de motor 5W-30</h3>
+                <p class="precio">20,00€</p>
+                <button onclick="addToCart('Aceite de motor 5W-30', 20)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="Aceite de motor 10W-40">
+                <h3>Aceite de motor 10W-40</h3>
+                <p class="precio">18,00€</p>
+                <button onclick="addToCart('Aceite de motor 10W-40', 18)">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">0</span>€</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Aceites</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
